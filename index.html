@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Encriptador de texto</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo Alura">
+            </a>
+        </header>
+        <main>
+            <section class="input">
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div>
+                    <h6 class="informacion">Sólo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>                
+            </section>
+            <section>
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
+                <div>
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy; Alex Nahuel Echeverria - Challenge encriptador de texto Alura ONE</p>
+            <div class="contacto">
+                <a target="_blank" href="https://github.com/echeverriaalex"> <img class="redes" src="images/github.png"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/alexnahuelecheverria/"> <img class="redes" src="images/linkedIn.png"></a>
+            </div>
+        </footer>
+        <script src="app.js"></script>   
+    </body>
+</html>
